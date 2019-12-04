@@ -1,0 +1,198 @@
+main {
+  background: url('https://images.pexels.com/photos/326235/pexels-photo-326235.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260')
+    no-repeat center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 50px 10px;
+  width: 100%;
+  min-height: 97vh;
+  color: white;
+  font-family: sans-serif;
+}
+
+main * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#form-container {
+  width: 70%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+#title {
+  text-align: center;
+  padding: 50px 0 30px 0;
+}
+#description {
+  text-align: center;
+}
+#survey-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px 0;
+}
+#left-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+  margin: auto;
+}
+#right-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+  margin: auto;
+}
+#bottom-form {
+  grid-column: 1/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 80px 0 0 0;
+}
+label {
+  color: white;
+}
+#name,
+#email,
+#number,
+select {
+  width: 100%;
+  font-size: 110%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid blue;
+  padding: 10px 0 5px 15px;
+  color: #fafafa;
+  margin-bottom: 15px;
+}
+#name:focus,
+#email:focus,
+#number:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+#name::placeholder,
+#email::placeholder,
+#number::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+#name:-ms-input-placeholder,
+#email:-ms-input-placeholder,
+#number:-ms-input-placeholder {
+  color: white;
+  opacity: 0.7;
+}
+#name::-ms-input-placeholder,
+#email::-ms-input-placeholder,
+#number::-ms-input-placeholder {
+  color: white;
+  opacity: 0.7;
+}
+#number {
+  width: 60px;
+}
+fieldset {
+  border: none;
+}
+#gender-label {
+  display: inline-block;
+  padding: 10px 0;
+}
+.radio {
+  padding: 5px 0;
+}
+.checkbox {
+  padding: 10px 0;
+  font-size: 120%;
+}
+select option {
+  background-color: blue;
+}
+textarea {
+  width: 80%;
+  height: 150px;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 130%;
+  color: blue;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+textarea::placeholder {
+  font-weight: normal;
+  color: blue;
+  opacity: 0.7;
+}
+textarea:-ms-input-placeholder {
+  font-weight: normal;
+  color: blue;
+  opacity: 0.7;
+}
+textarea::-ms-input-placeholder {
+  font-weight: normal;
+  color: blue;
+  opacity: 0.7;
+}
+#submit {
+  margin-top: 30px;
+  width: 200px;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: blue;
+  color: white;
+  font-size: 130%;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.7), -6px -6px 15px rgba(0, 0, 0, 0.7);
+}
+#submit:hover {
+  background-color: navy;
+}
+
+@media (max-width: 1025px) {
+  #form-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  #form-container {
+    width: 95%;
+  }
+  #left-form,
+  #right-form,
+  #bottom-form,
+  textarea {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  #survey-form {
+    grid-template-columns: 1fr;
+  }
+  #right-form {
+    padding-top: 50px;
+  }
+  #bottom-form {
+    grid-column: 1/2;
+    padding: 50px 0 0 0;
+  }
+  select {
+    font-size: 95%;
+  }
+  textarea {
+    font-size: 100%;
+  }
+}

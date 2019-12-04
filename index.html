@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Form Survey</title>
+  </head>
+  <body>
+    <main>
+      <div id="form-container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Let us know what summits have you completed or plan to complete.</p>
+        <form id="survey-form">
+          <div id="left-form">
+            <label for="name" id="name-label">Name:</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="John Doe"
+              autocomplete="off"
+              required
+            />
+            <label for="email" id="email-label">Email:</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="john.doe@something.com"
+              autocomplete="off"
+              required
+            />
+            <label for="number" id="number-label">Age:</label>
+            <input type="number"
+        id="number"
+              placeholder="40"
+              min="1"
+              max="110"
+              maxlength="3"
+      />
+            <fieldset>
+            <label for="gender" id="gender-label">Gender:</label>
+            <div class="radio"><input type="radio" name="gender" value="female" /> Female</div>
+            <div class="radio"><input type="radio" name="gender" value="male" /> Male</div>
+            <div class="radio"><input type="radio" name="gender" value="other" checked /> Other</div>
+          </div>
+          <div id="right-form">
+            <select id="dropdown">
+              <option>Summits I have completed:</option>
+              <option>Summits I plan to complete:</option>
+            </select>
+            <div class="checkbox"><input type="checkbox" value="value1" /> Mount Everest (Asia)</div>
+            <div class="checkbox"><input type="checkbox" value="value2" /> Anconcagua (South America)</div>
+            <div class="checkbox"><input type="checkbox" value="value2" /> Mt. McKinley (North America)</div>
+            <div class="checkbox"><input type="checkbox" value="value2" /> Kilimanjaro (Africa)</div>
+            <div class="checkbox"><input type="checkbox" value="value2" /> Mt. Elbrus (Europe)</div>
+            <div class="checkbox"><input type="checkbox" value="value2" /> Mt. Vinson (Antarctica)</div>
+            <div class="checkbox"><input type="checkbox" value="value2" /> Puncak Jaya (Australia)</div>
+          </div>
+          <div id="bottom-form">
+            <textarea placeholder="Tell us something about your expeditions!"></textarea>
+            <input type="submit" id="submit" />
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
